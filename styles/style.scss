@@ -135,6 +135,8 @@ header {
   line-height: 20px;
 }
 
+// -------------------------------------------------------
+
 // Main container for the content
 .main-container {
   margin: 71px 0 98px 0;
@@ -169,6 +171,8 @@ header {
   color: rgb(255, 255, 255);
   background: rgb(0, 121, 138);
 }
+
+// -------------------------------------------------------
 
 // Events section
 .events {
@@ -302,4 +306,50 @@ header {
   grid-template-rows: 1fr;
   grid-column-gap: 29px;
   grid-row-gap: 0px;
+}
+
+// -------------------------------------------------------
+
+// Join container section
+.join-container {
+  border-radius: 8px;
+  background: rgba(151, 202, 209, 0.08);
+
+  display: flex;
+  align-items: center;
+  gap: 75px;
+
+  padding: 20px 56px;
+}
+
+// Join title
+.join-title {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 36px;
+
+  margin-bottom: 16px;
+}
+
+// Join text
+.join-text {
+  font-size: 16px;
+  line-height: 24px;
+
+  margin-bottom: 16px;
+}
+
+// Join button
+.join-button {
+  border-radius: 8px;
+  background: rgb(227, 35, 89);
+  color: rgb(255, 255, 255);
+
+  padding: 10px 67px;
+}
+
+// Join image
+.join-image {
+  max-width: 341px;
+  max-height: 196px;
 }

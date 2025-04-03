@@ -474,3 +474,41 @@ header {
   -ms-grid-row: 1;
   -ms-grid-column: 7;
 }
+
+.join-container {
+  border-radius: 8px;
+  background: rgba(151, 202, 209, 0.08);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 75px;
+  padding: 20px 56px;
+}
+
+.join-title {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 36px;
+  margin-bottom: 16px;
+}
+
+.join-text {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.join-button {
+  border-radius: 8px;
+  background: #e32359;
+  color: white;
+  padding: 10px 67px;
+}
+
+.join-image {
+  max-width: 341px;
+  max-height: 196px;
+}
