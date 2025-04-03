@@ -10,6 +10,7 @@
 .container {
   max-width: 1196px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 // Header section
@@ -133,7 +134,6 @@ header {
   font-weight: 450;
   line-height: 20px;
 }
-// -------------------------------------------------
 
 // Main container for the content
 .main-container {
@@ -170,4 +170,136 @@ header {
   background: rgb(0, 121, 138);
 }
 
-// --------------------------------------------------
+// Events section
+.events {
+  margin: 24px 0 40px 0;
+}
+
+// Events header
+.events-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+// Events title
+.events-title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  p {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 36px;
+  }
+
+  button {
+    color: rgb(0, 121, 138);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 10px 40px 8px 20px;
+
+    border-radius: 8px;
+    background-color: rgba(151, 202, 209, 0.12) !important;
+    background: url("/img/events/events-title-button.svg") no-repeat right
+      center;
+    background-size: 22px;
+  }
+}
+
+// See all link
+.see-all {
+  color: rgb(0, 121, 138);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+// Events list
+.events-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 29px;
+  grid-row-gap: 36px;
+  margin-bottom: 60px;
+}
+
+// Events item
+.events-item {
+  img {
+    max-width: 272px;
+    max-height: 153px;
+    margin-bottom: 12px;
+  }
+}
+
+.events-item-info {
+  width: 272px;
+  height: 214px;
+}
+
+// Events item title
+.events-item-title {
+  max-width: 235px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 18px;
+}
+
+// Events item type
+.events-item-type {
+  color: rgb(112, 112, 112);
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 18px;
+}
+
+// Events item date
+.events-item-date {
+  background: url("/img/events/items/kalender.svg") no-repeat left center;
+  background-size: 24px;
+  padding-left: 30px;
+  line-height: 20px;
+  letter-spacing: -0.35px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+// Events item footer
+.events-item-footer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+// Events item going
+.events-item-going {
+  background: url("/img/events/items/going.svg") no-repeat left center;
+  background-size: 24px;
+  padding-left: 30px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+// Events item price
+.events-item-price {
+  background: url("/img/events/items/ticket.svg") no-repeat left center;
+  background-size: 24px;
+  padding-left: 32px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+// Upcoming events list
+.events-upcoming-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 29px;
+  grid-row-gap: 0px;
+}
