@@ -4,10 +4,15 @@
 // Global styles
 * {
   font-family: Roboto;
+}
+
+// Container for the main layout
+.container {
+  max-width: 1196px;
   margin: 0 auto;
 }
 
-// Header
+// Header section
 header {
   max-height: 64px;
   max-width: 1512px;
@@ -15,9 +20,10 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 11px;
+  margin: 0 auto;
 }
 
-// Header sections
+// Left section of the header
 .header-left-section {
   display: flex;
   align-items: center;
@@ -32,6 +38,7 @@ header {
   border-radius: 8px;
   overflow: hidden;
 
+  // Search icon
   .search-lupo {
     margin-left: 10px;
     display: flex;
@@ -44,6 +51,7 @@ header {
     }
   }
 
+  // Input fields
   input {
     padding: 12px 14px;
     font-size: 16px;
@@ -51,15 +59,18 @@ header {
     line-height: 19px;
   }
 
+  // Search input field
   .search-input {
     padding-left: 8px;
   }
 
+  // Location input field
   .location-input {
     border-left: 1px solid rgb(217, 217, 217);
-    padding-left: 15px; // Added left padding
+    padding-left: 15px;
   }
 
+  // Search button
   .search-button {
     background-color: rgb(246, 88, 88);
     height: 100%;
@@ -80,7 +91,7 @@ header {
   }
 }
 
-// Header right section
+// Right section of the header
 .header-right-section {
   display: flex;
   align-items: center;
@@ -122,3 +133,41 @@ header {
   font-weight: 450;
   line-height: 20px;
 }
+// -------------------------------------------------
+
+// Main container for the content
+.main-container {
+  margin: 71px 0 98px 0;
+  display: flex;
+  align-items: center;
+  gap: 55px;
+}
+
+// Main title
+.main-title {
+  margin-bottom: 25px;
+  max-width: 600px;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 52px;
+}
+
+// Main text
+.main-text {
+  margin-bottom: 24px;
+  max-width: 580px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+// Main button
+.main-button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(255, 255, 255);
+  background: rgb(0, 121, 138);
+}
+
+// --------------------------------------------------

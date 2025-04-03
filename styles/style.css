@@ -91,6 +91,10 @@ h6 {
 /*--------------------*/
 * {
   font-family: Roboto;
+}
+
+.container {
+  max-width: 1196px;
   margin: 0 auto;
 }
 
@@ -107,6 +111,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 11px;
+  margin: 0 auto;
 }
 
 .header-left-section {
@@ -235,4 +240,39 @@ header {
   font-size: 14px;
   font-weight: 450;
   line-height: 20px;
+}
+
+.main-container {
+  margin: 71px 0 98px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 55px;
+}
+
+.main-title {
+  margin-bottom: 25px;
+  max-width: 600px;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 52px;
+}
+
+.main-text {
+  margin-bottom: 24px;
+  max-width: 580px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.main-button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  background: #00798a;
 }
