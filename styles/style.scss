@@ -404,3 +404,64 @@ header {
   }
 }
 
+// ----------------------------------------------------
+
+// How section container
+.how {
+  margin-bottom: 64px;
+}
+
+// How items container
+.how-items {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+// Individual how item
+.how-item {
+  max-width: 580px;
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 32px 129px 24px 24px;
+  border-radius: 8px;
+  background: rgba(151, 202, 209, 0.08);
+
+  img {
+    max-width: 40px;
+  }
+}
+
+// How title container
+.how-title {
+  h2 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36px;
+    margin-bottom: 24px;
+  }
+}
+
+// How item info container
+.how-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  a {
+    color: rgb(0, 121, 138);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+}
