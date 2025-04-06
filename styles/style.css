@@ -512,3 +512,45 @@ header {
   max-width: 341px;
   max-height: 196px;
 }
+
+.cities {
+  margin-bottom: 64px;
+}
+
+.cities-title {
+  margin-bottom: 28px;
+}
+
+.cities-title h2 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 36px;
+  margin-bottom: 16px;
+}
+
+.cities-title p {
+  color: #707070;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.cities-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cities-item img {
+  max-width: 205px;
+  margin-bottom: 24px;
+}
+
+.cities-item p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center;
+}

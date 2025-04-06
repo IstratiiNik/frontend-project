@@ -353,3 +353,54 @@ header {
   max-width: 341px;
   max-height: 196px;
 }
+
+// --------------------------------------------------------
+
+// Cities section container
+.cities {
+  margin-bottom: 64px;
+}
+
+// Cities title container
+.cities-title {
+  // Title (h2) styles
+  h2 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 36px;
+    margin-bottom: 16px;
+  }
+
+  // Subtitle (p) styles
+  p {
+    color: rgb(112, 112, 112);
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  margin-bottom: 28px;
+}
+
+// Cities list container
+.cities-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+// Individual city item
+.cities-item {
+  // City image styles
+  img {
+    max-width: 205px;
+    margin-bottom: 24px;
+  }
+
+  // City name (p) styles
+  p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
+  }
+}
+
