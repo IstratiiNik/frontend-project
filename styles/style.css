@@ -622,3 +622,56 @@ header {
   font-weight: 500;
   line-height: 24px;
 }
+
+.friendship {
+  margin-bottom: 53.5px;
+}
+
+.friendship-title h2 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 36px;
+  margin-bottom: 16px;
+}
+
+.friendship-title p {
+  color: #707070;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 28px;
+}
+
+.firendship-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 32px;
+}
+
+.friendship-item img {
+  max-width: 376px;
+  margin-bottom: 24px;
+}
+
+.friendship-item h2 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 12px;
+}
+
+.friendship-item p {
+  color: #707070;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.friendship-item a {
+  color: #00798a;
+  font-size: 16px;
+  line-height: 24px;
+}

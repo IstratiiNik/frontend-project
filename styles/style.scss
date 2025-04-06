@@ -465,3 +465,58 @@ header {
     line-height: 24px;
   }
 }
+
+//----------------------------------------------------------
+
+// Friendship section container
+.friendship {
+  margin-bottom: 53.5px;
+}
+
+// Friendship title container
+.friendship-title {
+  h2 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36px;
+    margin-bottom: 16px;
+  }
+  p {
+    color: rgb(112, 112, 112);
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 28px;
+  }
+}
+
+// Friendship items container
+.firendship-items {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+// Individual friendship item
+.friendship-item {
+  img {
+    max-width: 376px;
+    margin-bottom: 24px;
+  }
+  h2 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    margin-bottom: 12px;
+  }
+  p {
+    color: rgb(112, 112, 112);
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+  a {
+    color: rgb(0, 121, 138);
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
