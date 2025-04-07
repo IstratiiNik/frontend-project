@@ -195,7 +195,7 @@ header {
 
   p {
     font-size: 28px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 36px;
   }
 
@@ -325,7 +325,7 @@ header {
 // Join title
 .join-title {
   font-size: 28px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 36px;
 
   margin-bottom: 16px;
@@ -413,7 +413,7 @@ header {
 .cities-title {
   h2 {
     font-size: 28px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 36px;
     margin-bottom: 16px;
   }
@@ -562,5 +562,144 @@ header {
     color: rgb(0, 121, 138);
     font-size: 16px;
     line-height: 24px;
+  }
+}
+//----------------------------------------------------------
+
+// Footer styles
+footer {
+  background: rgb(33, 33, 33);
+  padding: 28px 0 30px;
+}
+
+// Footer container
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+// Floor 4: Call-to-action section
+.floor4 {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgb(112, 112, 112);
+
+  h2 {
+    color: rgb(246, 247, 248);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 3%;
+  }
+
+  button {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 5%;
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 6px;
+    padding: 10px 14px;
+    cursor: pointer;
+  }
+}
+
+// Floor 3: Links section
+.floor3 {
+  display: flex;
+  gap: 40px;
+}
+
+// Floor 3 item: Individual link groups
+.floor3-item {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 12px;
+  width: 374px;
+
+  h3 {
+    color: rgb(246, 247, 248);
+    font-size: 16px;
+    font-weight: 600; // Updated to match title consistency
+    line-height: 24px;
+  }
+
+  a {
+    color: rgb(197, 196, 196);
+    line-height: 20px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// Floor 2: Social media and app links
+.floor2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// Floor 2 follow section: Social media links
+.floor2-follow {
+  h3 {
+    color: rgb(246, 247, 248);
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 14.5px;
+  }
+
+  a {
+    img {
+      max-width: 30px;
+    }
+  }
+}
+
+// Follow links container
+.follow-links {
+  display: flex;
+  align-items: center;
+  gap: 37px;
+}
+
+// App download links
+.get-it-on {
+  a {
+    padding-left: 20px;
+
+    img {
+      max-width: 120px;
+    }
+  }
+}
+
+// Floor 1: Legal links section
+.floor1 {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  p {
+    color: rgb(255, 255, 255);
+    line-height: 20px;
+  }
+
+  a {
+    color: rgb(197, 196, 196);
+    line-height: 20px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
