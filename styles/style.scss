@@ -356,14 +356,61 @@ header {
 
 // --------------------------------------------------------
 
-// Cities section container
+// Categories section
+.categories {
+  // Margin for spacing below the section
+  margin-bottom: 64px;
+}
+
+// Title styles for the categories section
+.categories-title {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 36px;
+  margin-bottom: 24px;
+}
+
+// List container for categories
+.categories-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+// Individual category item
+.categories-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 135px;
+  height: 112px;
+  padding: 23px 0 16px;
+  border-radius: 8px;
+  background: rgba(151, 202, 209, 0.08);
+
+  // Image inside category item
+  img {
+    max-width: 20px;
+  }
+
+  // Title inside category item
+  h3 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+  }
+}
+
+// --------------------------------------------------------
+
+// Cities section
 .cities {
   margin-bottom: 64px;
 }
 
-// Cities title container
+// Title container for the cities section
 .cities-title {
-  // Title (h2) styles
   h2 {
     font-size: 28px;
     font-weight: 500;
@@ -371,7 +418,6 @@ header {
     margin-bottom: 16px;
   }
 
-  // Subtitle (p) styles
   p {
     color: rgb(112, 112, 112);
     font-size: 16px;
@@ -381,7 +427,7 @@ header {
   margin-bottom: 28px;
 }
 
-// Cities list container
+// List container for cities
 .cities-list {
   display: flex;
   justify-content: space-between;
@@ -389,13 +435,11 @@ header {
 
 // Individual city item
 .cities-item {
-  // City image styles
   img {
     max-width: 205px;
     margin-bottom: 24px;
   }
 
-  // City name (p) styles
   p {
     font-size: 20px;
     font-weight: 500;
