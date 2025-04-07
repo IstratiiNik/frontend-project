@@ -143,6 +143,11 @@ header {
   display: flex;
   align-items: center;
   gap: 55px;
+
+  img {
+    max-width: 379px;
+    height: auto;
+  }
 }
 
 // Main title
@@ -225,8 +230,7 @@ header {
 // Events list
 .events-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(272px, 1fr));
   grid-column-gap: 29px;
   grid-row-gap: 36px;
   margin-bottom: 60px;
@@ -302,8 +306,9 @@ header {
 // Upcoming events list
 .events-upcoming-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr;
+  align-items: stretch;
+  grid-template-columns: repeat(auto-fill, minmax(272px, 1fr));
+  grid-template-rows: auto;
   grid-column-gap: 29px;
   grid-row-gap: 0px;
 }
@@ -312,14 +317,13 @@ header {
 
 // Join container section
 .join-container {
+  display: flex;
+  align-items: center; // Центрируем элементы по вертикали
+  justify-content: space-between; // Заголовок и текст слева, изображение справа
+  gap: 75px; // Отступ между текстом и изображением
+  padding: 20px 56px;
   border-radius: 8px;
   background: rgba(151, 202, 209, 0.08);
-
-  display: flex;
-  align-items: center;
-  gap: 75px;
-
-  padding: 20px 56px;
 }
 
 // Join title
@@ -327,16 +331,16 @@ header {
   font-size: 28px;
   font-weight: 600;
   line-height: 36px;
-
   margin-bottom: 16px;
+  text-align: left; // Выравниваем заголовок по левому краю
 }
 
 // Join text
 .join-text {
   font-size: 16px;
   line-height: 24px;
-
   margin-bottom: 16px;
+  text-align: left; // Выравниваем текст по левому краю
 }
 
 // Join button
@@ -344,7 +348,6 @@ header {
   border-radius: 8px;
   background: rgb(227, 35, 89);
   color: rgb(255, 255, 255);
-
   padding: 10px 67px;
 }
 
@@ -352,9 +355,9 @@ header {
 .join-image {
   max-width: 341px;
   max-height: 196px;
+  height: auto;
 }
-
-// --------------------------------------------------------
+//-------------------------------------------------------
 
 // Categories section
 .categories {
@@ -373,8 +376,9 @@ header {
 // List container for categories
 .categories-list {
   display: flex;
-  justify-content: space-between;
-  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 // Individual category item
@@ -390,7 +394,7 @@ header {
 
   // Image inside category item
   img {
-    max-width: 20px;
+    width: 20px;
   }
 
   // Title inside category item
@@ -430,13 +434,16 @@ header {
 // List container for cities
 .cities-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 35px;
 }
 
 // Individual city item
 .cities-item {
   img {
     max-width: 205px;
+    height: auto;
     margin-bottom: 24px;
   }
 
@@ -459,7 +466,8 @@ header {
 .how-items {
   display: flex;
   justify-content: center;
-  gap: 32px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 // Individual how item
@@ -468,7 +476,7 @@ header {
   display: flex;
   align-items: flex-start;
   gap: 24px;
-  padding: 32px 129px 24px 24px;
+  padding: 32px 112px 24px 24px;
   border-radius: 8px;
   background: rgba(151, 202, 209, 0.08);
 
@@ -536,14 +544,16 @@ header {
 // Friendship items container
 .firendship-items {
   display: flex;
-  justify-content: space-between;
-  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 // Individual friendship item
 .friendship-item {
   img {
     max-width: 376px;
+    height: auto;
     margin-bottom: 24px;
   }
   h2 {
@@ -557,6 +567,7 @@ header {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 16px;
+    max-width: 370px;
   }
   a {
     color: rgb(0, 121, 138);
@@ -700,6 +711,280 @@ footer {
 
     &:hover {
       text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: 393px) {
+  // Search container adjustments
+  .search-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  // Hide location input on small screens
+  .location-input {
+    display: none;
+  }
+
+  // Adjust search input and button for small screens
+  .search-input {
+    width: 100%;
+  }
+
+  .search-button {
+    width: 100%;
+  }
+
+  // Main container adjustments
+  .main-container {
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 20px;
+
+    img {
+      max-width: 220px;
+    }
+  }
+
+  // Main title adjustments
+  .main-title {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30.5px;
+    margin-bottom: 20px;
+  }
+
+  // Main text adjustments
+  .main-text {
+    max-width: 365px;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+
+  // Hide main button on small screens
+  .main-button {
+    display: none;
+  }
+
+  // Events title adjustments
+  .events-title {
+    gap: 4px;
+    p {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 24.67px;
+    }
+    button {
+      font-size: 13.71px;
+      line-height: 16.45px;
+    }
+  }
+
+  // Hide "See all" link on small screens
+  .see-all {
+    display: none;
+  }
+
+  // Join container adjustments
+  .join-container {
+    flex-direction: column;
+    padding: 0;
+    gap: 0;
+  }
+
+  // Join title adjustments
+  .join-title {
+    order: 1;
+    text-align: left;
+    font-size: 20px;
+  }
+
+  // Join image adjustments
+  .join-image {
+    order: 2;
+    max-width: 238px;
+    height: auto;
+  }
+
+  // Join info adjustments
+  .join-info {
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  // Categories title adjustments
+  .categories-title {
+    font-size: 20px;
+  }
+
+  // Cities section adjustments
+  .cities {
+    margin-bottom: 43px;
+  }
+
+  // Cities title adjustments
+  .cities-title {
+    h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: rgb(112, 112, 112);
+      font-size: 12px;
+      line-height: 24px;
+    }
+
+    margin-bottom: 8px;
+  }
+
+  // Cities item adjustments
+  .cities-item {
+    img {
+      max-width: 153px;
+      height: auto;
+      margin-bottom: 24px;
+    }
+    p {
+      font-size: 14.94px;
+      line-height: 20.92px;
+    }
+  }
+
+  // How section adjustments
+  .how {
+    margin-bottom: 17px;
+  }
+
+  // How items container adjustments
+  .how-items {
+    gap: 12px;
+  }
+
+  // Individual how item adjustments
+  .how-item {
+    max-width: 360px;
+    gap: 15px;
+    padding: 20px 20px 15px 15px;
+    border-radius: 8px;
+    background: rgba(151, 202, 209, 0.08);
+
+    img {
+      max-width: 25px;
+    }
+  }
+
+  // How title adjustments
+  .how-title {
+    h2 {
+      font-size: 20px;
+      margin-bottom: 18px;
+    }
+  }
+
+  // How item info adjustments
+  .how-item-info {
+    gap: 10px;
+
+    h3 {
+      font-size: 12px;
+      line-height: 15px;
+    }
+    p {
+      font-size: 10px;
+      line-height: 15px;
+    }
+    a {
+      font-size: 10px;
+      line-height: 15px;
+    }
+  }
+
+  // Friendship title adjustments
+  .friendship-title {
+    h2 {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+    p {
+      display: none;
+    }
+  }
+
+  // Friendship item adjustments
+  .friendship-item {
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 28px;
+      margin-bottom: 12px;
+    }
+    p {
+      font-size: 12px;
+      line-height: 23px;
+      max-width: 355px;
+    }
+    a {
+      font-size: 12px;
+      line-height: 23px;
+    }
+  }
+
+  // Footer adjustments
+  footer {
+    padding: 20px 0 30px;
+  }
+
+  // Floor 4 adjustments
+  .floor4 {
+    gap: 12px;
+  }
+
+  // Floor 3 adjustments
+  .floor3 {
+    display: flex;
+    gap: 40px;
+  }
+
+  // Floor 3 item adjustments
+  .floor3-item {
+    gap: 9px;
+
+    h3 {
+      font-weight: 400;
+    }
+  }
+
+  // Floor 2 adjustments
+  .floor2 {
+    margin-bottom: 30px;
+  }
+
+  // Floor 2 follow section adjustments
+  .floor2-follow {
+    a {
+      img {
+        max-width: 25px;
+      }
+    }
+  }
+
+  // Hide app download links on small screens
+  .get-it-on {
+    display: none;
+  }
+
+  // Floor 1 adjustments
+  .floor1 {
+    a {
+      display: none;
     }
   }
 }
