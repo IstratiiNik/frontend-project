@@ -122,6 +122,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 40px;
 }
 
@@ -284,7 +286,7 @@ header {
 }
 
 .events {
-  margin: 24px 0 40px 0;
+  margin: 24px 0 40px;
 }
 
 .events-header {
@@ -350,13 +352,7 @@ header {
   margin-bottom: 12px;
 }
 
-.events-item-info {
-  width: 272px;
-  height: 214px;
-}
-
 .events-item-title {
-  max-width: 235px;
   font-size: 20px;
   font-weight: 600;
   line-height: 24px;
@@ -413,8 +409,6 @@ header {
       -ms-flex-align: stretch;
           align-items: stretch;
   grid-template-columns: repeat(auto-fill, minmax(272px, 1fr));
-  -ms-grid-rows: auto;
-  grid-template-rows: auto;
   grid-column-gap: 29px;
   grid-row-gap: 0px;
 }
@@ -429,24 +423,40 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 75px;
+  gap: 20px;
   padding: 20px 56px;
   border-radius: 8px;
   background: rgba(151, 202, 209, 0.08);
+}
+
+.join-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 15px;
+}
+
+.join-title.--hidden {
+  display: none;
 }
 
 .join-title {
   font-size: 28px;
   font-weight: 600;
   line-height: 36px;
-  margin-bottom: 16px;
   text-align: left;
 }
 
 .join-text {
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 16px;
   text-align: left;
 }
 
@@ -841,7 +851,7 @@ footer {
 }
 
 @media (max-width: 393px) {
-  .search-container {
+  Search container adjustments .search-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -899,23 +909,96 @@ footer {
     font-size: 13.71px;
     line-height: 16.45px;
   }
+  .events-list {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(272px, 1fr));
+    grid-column-gap: 29px;
+    grid-row-gap: 30px;
+    margin-bottom: 40px;
+  }
   .see-all {
     display: none;
+  }
+  .events-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 7px;
+  }
+  .events-item img {
+    max-width: 98px;
+    max-height: 55px;
+    margin-bottom: 0;
+  }
+  .events-item-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: auto;
+    height: auto;
+  }
+  .events-item-title {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 15px;
+    margin-bottom: 3px;
+  }
+  .events-item-type {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    font-size: 9;
+    font-weight: 400;
+    line-height: 13px;
+    margin-bottom: 1px;
+  }
+  .events-item-date {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    color: #7c6f50;
+    background: none;
+    padding-left: 0;
+    line-height: 13px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+  .events-item-footer {
+    display: none;
+  }
+  .events-upcoming-list {
+    grid-row-gap: 30px;
   }
   .join-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     padding: 0;
     gap: 0;
   }
-  .join-title {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+  .join-title.--hidden {
+    display: block;
     text-align: left;
     font-size: 20px;
+  }
+  .join-title {
+    display: none;
   }
   .join-image {
     -webkit-box-ordinal-group: 3;
@@ -923,6 +1006,7 @@ footer {
             order: 2;
     max-width: 238px;
     height: auto;
+    margin: 0 auto;
   }
   .join-info {
     -webkit-box-ordinal-group: 4;
