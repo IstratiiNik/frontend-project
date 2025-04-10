@@ -6,7 +6,7 @@
   font-family: Roboto;
 }
 
-// Container for the main layout
+// Main container for layout
 .container {
   max-width: 1196px;
   margin: 0 auto;
@@ -14,14 +14,126 @@
 }
 
 // Header section
-header {
-  max-height: 64px;
+.header {
   max-width: 1512px;
+  padding: 11px 50px 11px 24px;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 11px;
-  margin: 0 auto;
+  flex-wrap: wrap; // Allows wrapping of elements
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* Logo styles */
+.logo {
+  margin-right: 40px;
+  max-height: 40px;
+}
+
+/* Search container styles */
+.nav-wrapper {
+  display: flex;
+  flex-grow: 1;
+  max-width: 600px;
+  position: relative;
+  align-items: center;
+  margin-top: 10px; // Top margin for the form
+}
+
+.search-icon {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 12px;
+  top: 25%;
+}
+
+.nav-input {
+  border: 1px solid #d9d9d9;
+  border-radius: 8px 0 0 8px;
+  width: 300px;
+  height: 42px;
+  padding-left: 40px;
+  flex-grow: 1;
+  min-width: 100px;
+}
+
+.nav-input.right {
+  border-left: 1px solid #d9d9d9;
+  border-radius: 0 8px 8px 0;
+}
+
+.nav-search-btn {
+  border-radius: 0 8px 8px 0;
+  width: 42px;
+  height: 42px;
+  background: #f65858;
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.nav-search-btn:hover {
+  background-color: #f33b3b;
+}
+
+/* Right Section */
+.nav-wrapper-right {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-left: auto;
+}
+
+/* Language button styles */
+.language-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #212121;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Login Button */
+.login-btn {
+  font-size: 14px;
+  font-weight: 500;
+  color: #212121;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Signup Button */
+.signup-btn {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  background: #00798a;
+  border-radius: 8px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.signup-btn:hover {
+  background: #f65858;
 }
 
 // Left section of the header
@@ -720,7 +832,51 @@ footer {
 }
 
 @media (max-width: 393px) {
-  Search container adjustments .search-container {
+  .header {
+    max-width: 364px;
+    padding: 6px 14px;
+    margin: auto;
+  }
+
+  .navbar {
+    justify-content: space-between; // Align logo and right section
+    align-items: center;
+  }
+
+  .nav-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .search-icon {
+    display: none; // Hide the left search icon
+  }
+
+  .nav-input {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .nav-input.right {
+    display: none;
+  }
+
+  .nav-wrapper-right {
+    gap: 8px;
+  }
+
+  .language-btn,
+  .login-btn,
+  .signup-btn {
+    font-size: 12px;
+  }
+
+  .signup-btn {
+    padding: 4px 8px;
+    border-radius: 6px;
+  }
+  .search-container {
     flex-direction: column;
     align-items: stretch;
     gap: 10px;
@@ -1071,3 +1227,61 @@ footer {
     }
   }
 }
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; // Switch to vertical layout
+    align-items: flex-start; // Align elements to the left
+    max-width: 728px;
+    padding: 11px 20px;
+    margin: auto;
+  }
+
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; // Align logo and right section
+    width: 100%;
+  }
+
+  .nav-wrapper {
+    flex-direction: column; // Stack elements vertically
+    align-items: stretch;
+    width: 100%;
+    gap: 10px;
+    order: 1;
+    margin: 10px auto;
+  }
+
+  .search-icon {
+    display: none; // Hide the left search icon
+  }
+
+  .nav-input {
+    width: 100%; // Make input fields full width
+  }
+
+  .nav-input.right {
+    display: none; // Hide the second input field
+  }
+
+  .nav-wrapper-right {
+    width: auto;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .language-btn,
+  .login-btn,
+  .signup-btn {
+    font-size: 12px; // Reduce font size
+  }
+
+  .signup-btn {
+    padding: 6px 12px; // Adjust padding
+  }
+}
+

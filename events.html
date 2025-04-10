@@ -18,37 +18,41 @@
   </head>
   <body>
     <!-- Header Section -->
-    <header>
-      <div class="header-left-section">
-        <!-- Logo -->
-        <a href="./index.html" class="logo">
-          <img src="./img/header/header-logo.svg" alt="Logo" />
-        </a>
+    <header class="header">
+      <nav class="navbar">
+        <a href="./index.html"
+          ><img class="logo" src="./img/header/header-logo.svg" alt="logo"
+        /></a>
 
-        <!-- Search Container -->
-        <div class="search-container">
-          <div class="search-lupo">
-            <img src="./img/header/search-lupo.svg" alt="Search Icon" />
-          </div>
-          <input type="text" class="search-input" placeholder="Search events" />
-          <input type="text" class="location-input" value="Mountain View, CA" />
-          <button class="search-button">
-            <img src="./img/header/lupo-button.svg" alt="Search" />
+        <form class="nav-wrapper">
+          <img class="search-icon" src="./img/header/search-lupo.svg" alt="" />
+          <input class="nav-input" type="text" placeholder="Search events" />
+          <input
+            class="nav-input right"
+            type="text"
+            placeholder="Mountain View, CA"
+          />
+          <button class="nav-search-btn">
+            <img
+              class="search-white-icon"
+              src="./img/header/lupo-button.svg"
+              alt="lupo button"
+            />
           </button>
-        </div>
-      </div>
+        </form>
 
-      <div class="header-right-section">
-        <!-- Language Button -->
-        <div class="language-button">
-          <img src="./img/header/language-icon.svg" alt="Language Icon" />
-          <button>English</button>
+        <div class="nav-wrapper-right">
+          <button class="language-btn">
+            <img
+              class="language-icon"
+              src="./img/header/language-icon.svg"
+              alt="Language Icon"
+            />English
+          </button>
+          <button class="login-btn">Log in</button>
+          <button class="signup-btn">Sign up</button>
         </div>
-
-        <!-- Log In and Sign Up Buttons -->
-        <button id="logIn" class="logIn">Log in</button>
-        <button id="setUp" class="signUp">Sign up</button>
-      </div>
+      </nav>
     </header>
 
     <!-- Main Section -->
