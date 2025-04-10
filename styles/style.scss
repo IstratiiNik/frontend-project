@@ -806,6 +806,9 @@ footer {
   .events-item {
     display: flex;
     gap: 7px;
+
+    border-top: 1px solid rgb(217, 217, 217); // Добавляем линию сверху
+    padding-top: 10px; // Добавляем отступ сверху, чтобы линия не прилегала к содержимому
     img {
       max-width: 98px;
       max-height: 55px;
