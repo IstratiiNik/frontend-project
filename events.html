@@ -3,14 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link to styles -->
     <link rel="stylesheet" href="./styles/style-events.css" />
+    <!-- Preconnect for fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <script defer type="module" src="./scripts/script.js"></script>
+    <!-- Link to JavaScript -->
+    <script defer type="module" src="./scripts/events-script.js"></script>
     <title>Events</title>
   </head>
   <body>
@@ -48,54 +51,66 @@
       </div>
     </header>
 
+    <!-- Main Section -->
     <div class="main">
       <div class="container">
         <div class="events">
+          <!-- Section title -->
           <div class="events-near-title">
             <h2>Events near New York, NY</h2>
             <h3>Events</h3>
           </div>
+
+          <!-- Filters for events -->
           <div class="events-filters">
-            <select class="events-filter" id="events-type">
+            <select id="type">
               <option value="all">Any Type</option>
               <option value="online">Online</option>
               <option value="offline">Offline</option>
             </select>
-            <select class="events-filter" id="events-distance">
-              <option value="all">Any distace</option>
-              <option value="5">5 km</option>
-              <option value="10">10 km</option>
-              <option value="15">15 km</option>
-              <option value="25">25 km</option>
-              <option value="50">50 km</option>
-              <option value="75">75 km</option>
-              <option value="100">100 km</option>
+            <select id="distance">
+              <option value="all">Any distance</option>
+              <option value="5-25">5-25 km</option>
+              <option value="25-50">25-50 km</option>
+              <option value="50-75">50-75 km</option>
+              <option value="75-100">75-100 km</option>
             </select>
-            <select class="events-filter" id="events-category">
+            <select id="category">
               <option value="all">Any categories</option>
-              <option value="social">Social Activities</option>
-              <option value="hobbies">Hobbies and Passions</option>
-              <option value="health">Health and Wellbeing</option>
-              <option value="business">Business</option>
-              <option value="technology">Technology</option>
+              <option value="Social Activities">Social Activities</option>
+              <option value="Hobbies and Passions">Hobbies and Passions</option>
+              <option value="Health and Wellbeing">Health and Wellbeing</option>
+              <option value="Business">Business</option>
+              <option value="Technology">Technology</option>
             </select>
           </div>
-          <div class="events-list"></div>
+
+          <!-- Container for the list of events -->
+          <div class="events-list" id="events-container"></div>
+        </div>
+
+        <!-- Map Section -->
+        <div class="map">
+          <p>Find events near</p>
+          <h3>New York, NY</h3>
+          <img src="./img/events/сomponent.png" alt="Map component" />
         </div>
       </div>
     </div>
 
+    <!-- Footer Section -->
     <footer>
       <div class="container">
         <div class="footer-container">
-          <!-- Floor 4: Call to action -->
+          <!-- Call to action -->
           <div class="floor4">
             <h2>Create your own Meetup group.</h2>
             <button>Get Started</button>
           </div>
-          <!-- Floor 3: Links section -->
+
+          <!-- Links Section -->
           <div class="floor3">
-            <!-- Account links -->
+            <!-- Account Links -->
             <div class="floor3-item">
               <h3>Your Account</h3>
               <a href="#">Sign up</a>
@@ -103,7 +118,7 @@
               <a href="#">Help</a>
               <a href="#">Become an Affiliate</a>
             </div>
-            <!-- Discover links -->
+            <!-- Discover Links -->
             <div class="floor3-item">
               <h3>Discover</h3>
               <a href="#">Groups</a>
@@ -114,7 +129,7 @@
               <a href="#">Local Guides</a>
               <a href="#">Make Friends</a>
             </div>
-            <!-- Meetup links -->
+            <!-- Meetup Links -->
             <div class="floor3-item">
               <h3>Meetup</h3>
               <a href="#">About</a>
@@ -125,9 +140,10 @@
               <a href="#">Podcast</a>
             </div>
           </div>
-          <!-- Floor 2: Social media and app links -->
+
+          <!-- Social Media and App Links -->
           <div class="floor2">
-            <!-- Social media links -->
+            <!-- Social Media Links -->
             <div class="floor2-follow">
               <h3>Follow us</h3>
               <div class="follow-links">
@@ -148,7 +164,7 @@
                 /></a>
               </div>
             </div>
-            <!-- App download links -->
+            <!-- App Download Links -->
             <div class="get-it-on">
               <a href="#"
                 ><img src="./img/footer/google-play.png" alt="Google Play"
@@ -158,7 +174,8 @@
               /></a>
             </div>
           </div>
-          <!-- Floor 1: Footer legal links -->
+
+          <!-- Legal Links -->
           <div class="floor1">
             <p>© 2024 Meetup</p>
             <a href="#">Terms of Service</a>
