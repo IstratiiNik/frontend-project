@@ -8,7 +8,6 @@ const eventsContainer = document.getElementById("events-container");
 
 // Main function to render events
 function renderEvents() {
-  console.log("All events:", eventsStore); // Debugging: Log all events
 
   // Get selected filter values
   const type = typeSelector.value;
