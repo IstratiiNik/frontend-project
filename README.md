@@ -6,8 +6,8 @@ A modern platform for discovering and joining events. Inspired by Meetup, this p
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/IstratiiNik/frontend-project.git
-   cd frontend-project
+   git clone https://github.com/IstratiiNik/meetup-events-platform.git
+   cd meetup-events-platform
    ```
 2. Open `index.html` in your browser or use Live Server.
 
